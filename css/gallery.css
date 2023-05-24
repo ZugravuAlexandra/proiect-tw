@@ -1,0 +1,156 @@
+.linie {
+    display: flex;
+}
+.coloana {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+h1 {
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Copperplate, Papyrus, fantasy;
+    letter-spacing: 5px;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(221, 149, 201, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+  }
+  
+  nav ul li {
+    flex-grow: 1;
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Copperplate, Papyrus, fantasy;
+    letter-spacing: 5px;
+    color:rgb(255, 255, 255);
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(221, 149, 201, 0.5);
+    min-width: 10em;
+  }
+  
+  nav ul ul li {
+    position: relative;
+  }
+  
+  nav ul ul li a {
+    padding: 0.5em 1em;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 10em;
+  }
+  
+  /* Styles for the dropdown of the "Distribution" menu item */
+  nav ul li ul li {
+    display: block;
+    width: 100%;
+    background-color: rgba(221, 149, 201, 0.5);
+    
+  }
+  
+  nav ul li ul li a:hover {
+    background-color: #bc76a8;
+  }
+  
+  /* Hover styles for navbar links */
+  nav ul li a:hover {
+    background-color: #bc76a8;
+  }
+  
+  /* Hover styles for dropdown menu links */
+  nav ul ul li a:hover {
+    background-color: #bc76a8;
+  }
+
+
+
+  .user-bar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 16px;
+  }
+
+  .user-bar .message {
+    margin: 0;
+  }
+
+  .user-bar button {
+    font-size: 14px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  .user-bar button:hover {
+    background-color: #45a049;
+  }
+
+  #refresh {
+    font-size: 14px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  #refresh:hover {
+    background-color: #0056b3;
+  }

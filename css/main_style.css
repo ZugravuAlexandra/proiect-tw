@@ -1,0 +1,176 @@
+/* Stilul pentru întreaga pagină */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  /* menu drop-down */
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(221, 149, 201, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+  }
+  
+  nav ul li {
+    flex-grow: 1;
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Copperplate, Papyrus, fantasy;
+    letter-spacing: 5px;
+    color:rgb(255, 255, 255);
+  }
+  
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #dd95c9;
+    min-width: 10em;
+  }
+  
+  nav ul ul li {
+    position: relative;
+  }
+  
+  nav ul ul li a {
+    padding: 0.5em 1em;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 10em;
+  }
+  
+  /* Styles for the dropdown of the "Distribution" menu item */
+  nav ul li ul li {
+    display: block;
+    width: 100%;
+  }
+  
+  nav ul li ul li a:hover {
+    background-color: #bc76a8;
+  }
+  
+  /* Hover styles for navbar links */
+  nav ul li a:hover {
+    background-color: #bc76a8;
+  }
+  
+  /* Hover styles for dropdown menu links */
+  nav ul ul li a:hover {
+    background-color: #bc76a8;
+  }
+  
+  
+
+
+  /* Stilul pentru titlu */
+  h2 {
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Copperplate, Papyrus, fantasy;
+    letter-spacing: 5px;
+    color:rgb(255, 255, 255);
+  }
+  
+  /* Stilul pentru întrebări */
+  p {
+    font-size: 1.2em;
+    margin-top: 30px;
+    color:rgb(255, 255, 255);
+  }
+  
+  /* Stilul pentru răspunsurile în chenare */
+  label {
+    display: block;
+    margin-top: 10px;
+    padding: 15px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+  }
+  
+  /* Stilul pentru răspunsurile selectate */
+  input[type="radio"]:checked + label {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  /* Stilul pentru butonul de trimitere */
+  button[type="submit"] {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff67ae;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    width: 200px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #65b968;
+  }
+  
+  /* Stilul pentru imaginea personajului */
+  #result-image {
+    display: block;
+    margin: 30px auto;
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+  }
+  
+  /* Stilul pentru div-ul cu rezultate */
+  #results {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Stilul pentru textul rezultatelor */
+  #result-text {
+    font-size: 1.2em;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+  }
+  
