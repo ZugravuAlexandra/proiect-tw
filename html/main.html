@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puss in boots</title>
+    <link rel="stylesheet" href="main_style.css">
+    
+</head>
+<body>
+
+    <!--Menu drop-down--> 
+    
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="main.html">Quiz</a></li>
+        <li>
+          <a href="#">Distribution</a>
+          <ul>
+            <li><a href="https://www.imdb.com/name/nm0000104/">Antonio Banderas</a></li>
+            <li><a href="https://www.imdb.com/name/nm0000161/">Salma Hayek</a></li>
+            <li><a href="https://www.imdb.com/name/nm6073955/">Florence Pugh</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>     
+
+    <!--Quiz-->
+    <form id="quiz">
+        <h2><b>Quiz</b></h2>
+        <p>1. What is your strength?</p>
+        <label><input type="radio" name="q1" value="0"> Discipline</label><br>
+        <label><input type="radio" name="q1" value="1"> Dedication</label><br>
+        <label><input type="radio" name="q1" value="2"> Trustworthiness</label><br>
+      
+        <p>2. What is your biggest fear?</p>
+        <label><input type="radio" name="q2" value="0"> Not believing in myself</label><br>
+        <label><input type="radio" name="q2" value="1"> Death</label><br>
+        <label><input type="radio" name="q2" value="2"> Being alone without family or friends</label><br>
+
+        <p>3. Do you like or dislike surprises?</p>
+        <label><input type="radio" name="q3" value="0"> I hate surprises</label><br>
+        <label><input type="radio" name="q3" value="2"> I love surprises</label><br>
+        <label><input type="radio" name="q3" value="1"> Only if they are from close people</label><br>
+
+        <p>4. How would your friends describe you?</p>
+        <label><input type="radio" name="q4" value="2"> Loyal</label><br>
+        <label><input type="radio" name="q4" value="0"> Smart</label><br>
+        <label><input type="radio" name="q4" value="1"> Strong</label><br>
+
+        <p>5. How many lives would you have wasted if you were at Puss’ place?</p>
+        <label><input type="radio" name="q5" value="2"> None</label><br>
+        <label><input type="radio" name="q5" value="1"> More</label><br>
+        <label><input type="radio" name="q5" value="0"> 2</label><br>
+
+        <p>6. Do you always need a crime partner in your naughty tasks?</p>
+        <label><input type="radio" name="q6" value="1"> In some cases</label><br>
+        <label><input type="radio" name="q6" value="0"> Noo</label><br>
+        <label><input type="radio" name="q6" value="2"> Haha yes</label><br>
+
+        
+      
+        <button type="submit">Trimite</button>
+    </form>
+      
+    <div id="results">
+        <h3 style="color: rgb(255, 255, 255); font-family: Copperplate, Papyrus, fantasy; font-size: 30px;">Rezultate</h3>
+        <p id="result-text"></p>
+        <img id="result-image" src="" alt="personajul quiz-ului">
+      </div>
+      
+    <script src="quiz.js"></script>
+      
+</body>
+</html>
